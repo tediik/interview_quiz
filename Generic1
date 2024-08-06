@@ -6,15 +6,16 @@ public class Generic1 {
         gen.m(integerList); 
     } 
 
-static class Gen<T> { 
-    <T> void m(Collection<T> collection) { 
-        for (T s : collection) { 
-            System.out.println(s); 
-        } 
-    } 
-    <T> void m(List<String> list) { 
-        for (String s : list) { 
-            System.out.println(s); 
+    static class Gen<T> { 
+        <T> void m(Collection<T> collection) { 
+            for (T s : collection) { 
+                System.out.println(s); 
+            } 
+        }
+
+        <T> void m(List<String> list) { 
+            for (String s : list) { 
+                System.out.println(s); 
             } 
         } 
     } 
